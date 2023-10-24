@@ -1,7 +1,6 @@
 import asyncio
 
 from pyrogram import filters
-from pyrogram.enums.Chat import Chat
 
 from MukeshRobot import OWNER_ID, pbot
 from MukeshRobot.utils.admins import can_change_info
@@ -105,7 +104,7 @@ async def downvote(_, message):
     )
 
 
-@pbot.on_message(filters.command("karmastat") & filters.chat_type.groups)
+@pbot.on_message(filters.command("karmastat") & filters.group)
 @capture_err
 async def karma(_, message):
     chat_id = message.chat.id
