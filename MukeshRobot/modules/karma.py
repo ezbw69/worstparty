@@ -1,7 +1,7 @@
 import asyncio
 
 from pyrogram import filters
-from pyrogram.enums.ChatType import ChatType
+from pyrogram.enums.Chat import Chat
 
 from MukeshRobot import OWNER_ID, pbot
 from MukeshRobot.utils.admins import can_change_info
